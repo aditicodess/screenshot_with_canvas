@@ -34,7 +34,7 @@ These are the steps to follow:
 You can see your section without even deploying webpage through this link:
 1. Copy the URL of your HTML file (or index.html file) from Github.
 2. Add "htmlpreview.github.io/?" in the prefix of the URL.
-Example: [https://htmlpreview.github.io/?https://github.com/aditisinghchauhan/screenshot_with_canvas/blob/master/Main-Code/index.html](https://htmlpreview.github.io/?https://github.com/aditisinghchauhan/screenshot_with_canvas/blob/master/Main-Code/index.html)
+Example: [https://htmlpreview.github.io/?https://github.com/aditisinghchauhan/screenshot_with_canvas/blob/master/index.html](https://htmlpreview.github.io/?https://github.com/aditisinghchauhan/screenshot_with_canvas/blob/master/index.html)
 
 ## Reporting Bugs and Issues
 
