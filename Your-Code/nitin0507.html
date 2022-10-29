@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML2CANVAS2IMAGE</title>
+  </head>
+  <body>
+    <div class="convert">
+      <p>
+        Here I want to write my own code so that I can contribute in
+        hactoberfest.
+      </p>
+      <img crossorigin="use-credentials" src="girl.png" alt="image" />
+    </div>
+    <div class="result"></div>
+    <a class="a" href="">Download</a>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script>
+      const elm = document.querySelector(".convert");
+      html2canvas(elm, {
+        backgroundColor: "purple",
+        useCORS: true,
+        allowTaint: true,
+      }).then(function (canvas) {
+        document.querySelector(".result").append(canvas);
+        let cvs = document.querySelector("canvas");
+        let a = document.querySelector(".a");
+        a.href = cvs.toDataURL("");
+        a.download = "html2canvas.png";
+      });
+    </script>
+  </body>
+</html>
